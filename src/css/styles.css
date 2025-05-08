@@ -5,14 +5,104 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./1-timer.css');
+@import url('./2-snackbar.css');
+/* ------------reset styles--------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.header {
+  padding: 20px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-link {
+  display: inline-block;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.back-link {
+  display: inline-block;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
